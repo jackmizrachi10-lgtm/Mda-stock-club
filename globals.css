@@ -1,0 +1,28 @@
+/* styles/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg: #060609;
+  --c1: #0c0c12;
+  --c2: #101018;
+  --bd: #1a1a26;
+  --mt: #55556a;
+  --tx: #dddde8;
+  --g: #00e676;
+  --r: #ff1744;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--bg); color: var(--tx); font-family: 'Outfit', sans-serif; min-height: 100vh; }
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--bd); border-radius: 3px; }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+@keyframes glow { 0%, 100% { box-shadow: 0 0 20px rgba(0,230,118,0.12); } 50% { box-shadow: 0 0 40px rgba(0,230,118,0.18); } }
+
+.fade { animation: fadeIn 0.35s ease forwards; }
+.mono { font-family: 'JetBrains Mono', monospace; }
